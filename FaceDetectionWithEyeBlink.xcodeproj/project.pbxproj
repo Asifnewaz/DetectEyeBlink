@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4D186002484D09E008C1D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D185FF2484D09E008C1D7E /* AppDelegate.swift */; };
+		A4D186022484D09E008C1D7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D186012484D09E008C1D7E /* SceneDelegate.swift */; };
+		A4D186042484D09E008C1D7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D186032484D09E008C1D7E /* ViewController.swift */; };
+		A4D186072484D09E008C1D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D186052484D09E008C1D7E /* Main.storyboard */; };
+		A4D186092484D09F008C1D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D186082484D09F008C1D7E /* Assets.xcassets */; };
+		A4D1860C2484D09F008C1D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D1860A2484D09F008C1D7E /* LaunchScreen.storyboard */; };
+		A4D186172484D0F6008C1D7E /* FaceDetectorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D186142484D0F6008C1D7E /* FaceDetectorFilter.swift */; };
+		A4D186182484D0F6008C1D7E /* SequenceSmoother.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D186152484D0F6008C1D7E /* SequenceSmoother.swift */; };
+		A4D186192484D0F6008C1D7E /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D186162484D0F6008C1D7E /* FaceDetector.swift */; };
+		A4D1864B2484DE52008C1D7E /* leftEye_Blinking.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186442484DE52008C1D7E /* leftEye_Blinking.gif */; };
+		A4D1864C2484DE52008C1D7E /* leftEye_AlmostOpen.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186452484DE52008C1D7E /* leftEye_AlmostOpen.gif */; };
+		A4D1864D2484DE52008C1D7E /* leftEye_Closing.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186462484DE52008C1D7E /* leftEye_Closing.gif */; };
+		A4D1864E2484DE52008C1D7E /* leftEye_Opening.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186472484DE52008C1D7E /* leftEye_Opening.gif */; };
+		A4D1864F2484DE52008C1D7E /* leftEye_Close.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186482484DE52008C1D7E /* leftEye_Close.gif */; };
+		A4D186502484DE52008C1D7E /* leftEye_Open.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186492484DE52008C1D7E /* leftEye_Open.gif */; };
+		A4D186512484DE52008C1D7E /* leftEye_AlmostClose.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D1864A2484DE52008C1D7E /* leftEye_AlmostClose.gif */; };
+		A4D1865A2484DE9D008C1D7E /* rightEye_Closing.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186532484DE9D008C1D7E /* rightEye_Closing.gif */; };
+		A4D1865B2484DE9D008C1D7E /* rightEye_Close.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186542484DE9D008C1D7E /* rightEye_Close.gif */; };
+		A4D1865C2484DE9D008C1D7E /* rightEye_Opening.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186552484DE9D008C1D7E /* rightEye_Opening.gif */; };
+		A4D1865D2484DE9D008C1D7E /* rightEye_Open.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186562484DE9D008C1D7E /* rightEye_Open.gif */; };
+		A4D1865E2484DE9D008C1D7E /* rightEye_Blinking.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186572484DE9D008C1D7E /* rightEye_Blinking.gif */; };
+		A4D1865F2484DE9D008C1D7E /* rightEye_AlmostClose.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186582484DE9D008C1D7E /* rightEye_AlmostClose.gif */; };
+		A4D186602484DE9D008C1D7E /* rightEye_AlmostOpen.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D186592484DE9D008C1D7E /* rightEye_AlmostOpen.gif */; };
+		E0098D486969562E48E2E539 /* Pods_FaceDetectionWithEyeBlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4DCFC0738A5B29E01C865 /* Pods_FaceDetectionWithEyeBlink.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26C4DCFC0738A5B29E01C865 /* Pods_FaceDetectionWithEyeBlink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceDetectionWithEyeBlink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E538E428C2BED0F3F5085C3 /* Pods-FaceDetectionWithEyeBlink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetectionWithEyeBlink.release.xcconfig"; path = "Target Support Files/Pods-FaceDetectionWithEyeBlink/Pods-FaceDetectionWithEyeBlink.release.xcconfig"; sourceTree = "<group>"; };
+		693D578A8479D61E6CA77D89 /* Pods-FaceDetectionWithEyeBlink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetectionWithEyeBlink.debug.xcconfig"; path = "Target Support Files/Pods-FaceDetectionWithEyeBlink/Pods-FaceDetectionWithEyeBlink.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D185FC2484D09E008C1D7E /* Face Eye Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Eye Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D185FF2484D09E008C1D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4D186012484D09E008C1D7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4D186032484D09E008C1D7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4D186062484D09E008C1D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4D186082484D09F008C1D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4D1860B2484D09F008C1D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4D1860D2484D09F008C1D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D186142484D0F6008C1D7E /* FaceDetectorFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectorFilter.swift; sourceTree = "<group>"; };
+		A4D186152484D0F6008C1D7E /* SequenceSmoother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceSmoother.swift; sourceTree = "<group>"; };
+		A4D186162484D0F6008C1D7E /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		A4D186442484DE52008C1D7E /* leftEye_Blinking.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_Blinking.gif; sourceTree = "<group>"; };
+		A4D186452484DE52008C1D7E /* leftEye_AlmostOpen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_AlmostOpen.gif; sourceTree = "<group>"; };
+		A4D186462484DE52008C1D7E /* leftEye_Closing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_Closing.gif; sourceTree = "<group>"; };
+		A4D186472484DE52008C1D7E /* leftEye_Opening.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_Opening.gif; sourceTree = "<group>"; };
+		A4D186482484DE52008C1D7E /* leftEye_Close.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_Close.gif; sourceTree = "<group>"; };
+		A4D186492484DE52008C1D7E /* leftEye_Open.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_Open.gif; sourceTree = "<group>"; };
+		A4D1864A2484DE52008C1D7E /* leftEye_AlmostClose.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftEye_AlmostClose.gif; sourceTree = "<group>"; };
+		A4D186532484DE9D008C1D7E /* rightEye_Closing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_Closing.gif; sourceTree = "<group>"; };
+		A4D186542484DE9D008C1D7E /* rightEye_Close.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_Close.gif; sourceTree = "<group>"; };
+		A4D186552484DE9D008C1D7E /* rightEye_Opening.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_Opening.gif; sourceTree = "<group>"; };
+		A4D186562484DE9D008C1D7E /* rightEye_Open.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_Open.gif; sourceTree = "<group>"; };
+		A4D186572484DE9D008C1D7E /* rightEye_Blinking.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_Blinking.gif; sourceTree = "<group>"; };
+		A4D186582484DE9D008C1D7E /* rightEye_AlmostClose.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_AlmostClose.gif; sourceTree = "<group>"; };
+		A4D186592484DE9D008C1D7E /* rightEye_AlmostOpen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightEye_AlmostOpen.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4D185F92484D09E008C1D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0098D486969562E48E2E539 /* Pods_FaceDetectionWithEyeBlink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4D185F32484D09E008C1D7E = {
+			isa = PBXGroup;
+			children = (
+				A4D185FE2484D09E008C1D7E /* FaceDetectionWithEyeBlink */,
+				A4D185FD2484D09E008C1D7E /* Products */,
+				BB2E621370D3CF339EB5E6DF /* Pods */,
+				DE57982D6C1E7FF303CF4A4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D185FD2484D09E008C1D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4D185FC2484D09E008C1D7E /* Face Eye Blink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4D185FE2484D09E008C1D7E /* FaceDetectionWithEyeBlink */ = {
+			isa = PBXGroup;
+			children = (
+				A4D186522484DE9D008C1D7E /* right */,
+				A4D186432484DE52008C1D7E /* left */,
+				A4D186132484D0D2008C1D7E /* FaceDetector */,
+				A4D185FF2484D09E008C1D7E /* AppDelegate.swift */,
+				A4D186012484D09E008C1D7E /* SceneDelegate.swift */,
+				A4D186032484D09E008C1D7E /* ViewController.swift */,
+				A4D186052484D09E008C1D7E /* Main.storyboard */,
+				A4D186082484D09F008C1D7E /* Assets.xcassets */,
+				A4D1860A2484D09F008C1D7E /* LaunchScreen.storyboard */,
+				A4D1860D2484D09F008C1D7E /* Info.plist */,
+			);
+			path = FaceDetectionWithEyeBlink;
+			sourceTree = "<group>";
+		};
+		A4D186132484D0D2008C1D7E /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				A4D186162484D0F6008C1D7E /* FaceDetector.swift */,
+				A4D186142484D0F6008C1D7E /* FaceDetectorFilter.swift */,
+				A4D186152484D0F6008C1D7E /* SequenceSmoother.swift */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
+		A4D186432484DE52008C1D7E /* left */ = {
+			isa = PBXGroup;
+			children = (
+				A4D186442484DE52008C1D7E /* leftEye_Blinking.gif */,
+				A4D186452484DE52008C1D7E /* leftEye_AlmostOpen.gif */,
+				A4D186462484DE52008C1D7E /* leftEye_Closing.gif */,
+				A4D186472484DE52008C1D7E /* leftEye_Opening.gif */,
+				A4D186482484DE52008C1D7E /* leftEye_Close.gif */,
+				A4D186492484DE52008C1D7E /* leftEye_Open.gif */,
+				A4D1864A2484DE52008C1D7E /* leftEye_AlmostClose.gif */,
+			);
+			path = left;
+			sourceTree = "<group>";
+		};
+		A4D186522484DE9D008C1D7E /* right */ = {
+			isa = PBXGroup;
+			children = (
+				A4D186532484DE9D008C1D7E /* rightEye_Closing.gif */,
+				A4D186542484DE9D008C1D7E /* rightEye_Close.gif */,
+				A4D186552484DE9D008C1D7E /* rightEye_Opening.gif */,
+				A4D186562484DE9D008C1D7E /* rightEye_Open.gif */,
+				A4D186572484DE9D008C1D7E /* rightEye_Blinking.gif */,
+				A4D186582484DE9D008C1D7E /* rightEye_AlmostClose.gif */,
+				A4D186592484DE9D008C1D7E /* rightEye_AlmostOpen.gif */,
+			);
+			path = right;
+			sourceTree = "<group>";
+		};
+		BB2E621370D3CF339EB5E6DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693D578A8479D61E6CA77D89 /* Pods-FaceDetectionWithEyeBlink.debug.xcconfig */,
+				5E538E428C2BED0F3F5085C3 /* Pods-FaceDetectionWithEyeBlink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE57982D6C1E7FF303CF4A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26C4DCFC0738A5B29E01C865 /* Pods_FaceDetectionWithEyeBlink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4D185FB2484D09E008C1D7E /* FaceDetectionWithEyeBlink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D186102484D09F008C1D7E /* Build configuration list for PBXNativeTarget "FaceDetectionWithEyeBlink" */;
+			buildPhases = (
+				070D332C659F91F41745B377 /* [CP] Check Pods Manifest.lock */,
+				A4D185F82484D09E008C1D7E /* Sources */,
+				A4D185F92484D09E008C1D7E /* Frameworks */,
+				A4D185FA2484D09E008C1D7E /* Resources */,
+				71117CB49070CF92832D25F6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetectionWithEyeBlink;
+			productName = FaceDetectionWithEyeBlink;
+			productReference = A4D185FC2484D09E008C1D7E /* Face Eye Blink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4D185F42484D09E008C1D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Asif Newaz";
+				TargetAttributes = {
+					A4D185FB2484D09E008C1D7E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A4D185F72484D09E008C1D7E /* Build configuration list for PBXProject "FaceDetectionWithEyeBlink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4D185F32484D09E008C1D7E;
+			productRefGroup = A4D185FD2484D09E008C1D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4D185FB2484D09E008C1D7E /* FaceDetectionWithEyeBlink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4D185FA2484D09E008C1D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D186602484DE9D008C1D7E /* rightEye_AlmostOpen.gif in Resources */,
+				A4D1864F2484DE52008C1D7E /* leftEye_Close.gif in Resources */,
+				A4D1860C2484D09F008C1D7E /* LaunchScreen.storyboard in Resources */,
+				A4D1865F2484DE9D008C1D7E /* rightEye_AlmostClose.gif in Resources */,
+				A4D186092484D09F008C1D7E /* Assets.xcassets in Resources */,
+				A4D1865C2484DE9D008C1D7E /* rightEye_Opening.gif in Resources */,
+				A4D1864C2484DE52008C1D7E /* leftEye_AlmostOpen.gif in Resources */,
+				A4D1865B2484DE9D008C1D7E /* rightEye_Close.gif in Resources */,
+				A4D1864D2484DE52008C1D7E /* leftEye_Closing.gif in Resources */,
+				A4D186072484D09E008C1D7E /* Main.storyboard in Resources */,
+				A4D1864B2484DE52008C1D7E /* leftEye_Blinking.gif in Resources */,
+				A4D1864E2484DE52008C1D7E /* leftEye_Opening.gif in Resources */,
+				A4D186512484DE52008C1D7E /* leftEye_AlmostClose.gif in Resources */,
+				A4D1865A2484DE9D008C1D7E /* rightEye_Closing.gif in Resources */,
+				A4D1865E2484DE9D008C1D7E /* rightEye_Blinking.gif in Resources */,
+				A4D186502484DE52008C1D7E /* leftEye_Open.gif in Resources */,
+				A4D1865D2484DE9D008C1D7E /* rightEye_Open.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		070D332C659F91F41745B377 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceDetectionWithEyeBlink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71117CB49070CF92832D25F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceDetectionWithEyeBlink/Pods-FaceDetectionWithEyeBlink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceDetectionWithEyeBlink/Pods-FaceDetectionWithEyeBlink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceDetectionWithEyeBlink/Pods-FaceDetectionWithEyeBlink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4D185F82484D09E008C1D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D186042484D09E008C1D7E /* ViewController.swift in Sources */,
+				A4D186002484D09E008C1D7E /* AppDelegate.swift in Sources */,
+				A4D186172484D0F6008C1D7E /* FaceDetectorFilter.swift in Sources */,
+				A4D186022484D09E008C1D7E /* SceneDelegate.swift in Sources */,
+				A4D186192484D0F6008C1D7E /* FaceDetector.swift in Sources */,
+				A4D186182484D0F6008C1D7E /* SequenceSmoother.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4D186052484D09E008C1D7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D186062484D09E008C1D7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4D1860A2484D09F008C1D7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D1860B2484D09F008C1D7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4D1860E2484D09F008C1D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4D1860F2484D09F008C1D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4D186112484D09F008C1D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693D578A8479D61E6CA77D89 /* Pods-FaceDetectionWithEyeBlink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9QLQ5G9V8;
+				INFOPLIST_FILE = FaceDetectionWithEyeBlink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asif.FaceDetectionWithEyeBlink;
+				PRODUCT_NAME = "Face Eye Blink";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4D186122484D09F008C1D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E538E428C2BED0F3F5085C3 /* Pods-FaceDetectionWithEyeBlink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9QLQ5G9V8;
+				INFOPLIST_FILE = FaceDetectionWithEyeBlink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asif.FaceDetectionWithEyeBlink;
+				PRODUCT_NAME = "Face Eye Blink";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4D185F72484D09E008C1D7E /* Build configuration list for PBXProject "FaceDetectionWithEyeBlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D1860E2484D09F008C1D7E /* Debug */,
+				A4D1860F2484D09F008C1D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D186102484D09F008C1D7E /* Build configuration list for PBXNativeTarget "FaceDetectionWithEyeBlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D186112484D09F008C1D7E /* Debug */,
+				A4D186122484D09F008C1D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4D185F42484D09E008C1D7E /* Project object */;
+}
